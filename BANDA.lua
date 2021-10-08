@@ -1820,7 +1820,7 @@ echo '⩹━━━━◍𝗦𝙊𝙐𝙍𝗖𝙀 𝗔𝗟𝗠𝙊𝗟𝙐𝗞◍
 end
 if text == 'تحديث السورس ' and Debn(msg) then 
 os.execute('rm -rf BANDA.lua')
-os.execute('wget https://raw.github.com/frawnwa1234/offlien/main/BANDA.lua')
+os.execute('wget https://raw.github.com/frawnwa13/offlinfrawn/main/BANDA.lua')
 send(msg.chat_id_, msg.id_,' ◍ تم تحديث السورس')
 dofile('BANDA.lua')  
 end
@@ -3452,7 +3452,7 @@ end
 return false
 end
 os.execute('rm -rf BANDA.lua')
-os.execute('wget https://raw.github.com/frawnwa1234/offlien/main/BANDA.lua')
+os.execute('wget https://raw.github.com/frawnwa13/offlinfrawn/main/BANDA.lua')
 send(msg.chat_id_, msg.id_,' ◍ تم تحديث السورس')
 dofile('BANDA.lua')  
 end
