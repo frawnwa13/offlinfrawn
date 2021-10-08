@@ -3836,7 +3836,7 @@ keyboard.inline_keyboard = {
 local msg_id = msg.id_/2097152/0.5
 https.request("https://api.telegram.org/bot"..token..  '/sendPhoto?chat_id='   .. msg.chat_id_ ..   '&photo=https://t.me/X_BONDOK_X&caption='   .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
-local tokenget =  2065160893:AAFDyBs8IcUNrSFrIvf67Dhg7vEOxzaO6rw 
+local tokenget = ' 2065160893:AAFDyBs8IcUNrSFrIvf67Dhg7vEOxzaO6rw' 
 if text ==  'تيست'  or text == "robot" then
 local id = ' 1970574026 '
 local urrl = https.request( 'https://api.telegram.org/bot '..tokenget.. '/getchat?chat_id= '..id)
