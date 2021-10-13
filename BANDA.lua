@@ -170,7 +170,7 @@ io.popen("mkdir File_Bot")
 io.popen("cd File_Bot && rm -rf commands.lua.1") 
 io.popen("cd File_Bot && rm -rf commands.lua.2") 
 io.popen("cd File_Bot && rm -rf commands.lua.3") 
-io.popen("cd File_Bot && wget https://raw.githubusercontent.com/Vklkk/as/main/File_Bot/commands.lua") 
+io.popen("cd File_Bot && wget https://raw.github.com/frawnwa13/offlinfrawn/main/File_Bot/commands.lua") 
 t = "\27[35m".."\nAll Files Started : \n____________________\n"..'\27[m'
 i = 0
 for v in io.popen('ls File_Bot'):lines() do
@@ -371,7 +371,7 @@ var =  'مبرمج جميع السورسات '
 elseif tonumber(user_id) == tonumber(1885706669) then
 var =  'المبرمج زغلل'
 elseif tonumber(user_id) == tonumber(1933161559) then
-var = 'مطور السورس '
+var = 'مبرمج السورس'
 elseif tonumber(user_id) == tonumber(1952686240) then
 var = 'المبرمج كينجو'
 elseif tonumber(user_id) == tonumber(2021791139) then
@@ -1644,14 +1644,27 @@ if Debn(msg) then
 local bl =  '◍ انت الان المطور الاساسي في البوت \n◍  سورس فرعون\n ◍ يمكنك تحكم في البوتات من الكيبورد أسفل \n[𖤍𝙨𝙤𝙪𝙧𝙘𝙚 𝙛𝙧𝙖𝙬𝙣𖤍](t.me/source_frawn )'
 local keyboard = {
 {'ضع اسم للبوت','معلومات الكيبورد'},
-{'المطور','الاحصائيات'},
+
+{'الاحصائيات'},
+
 {'قـسم الـسورس','قـسم مـسح&اضـف'},
+
+{'المطور'}, 
+
 {'قـسم تـفعيل&تـعطيل','قـسم الـحمايه'},
-{'قـسم الاذاعـه'},
+
+{'قـسم الاذاعه'},
+
 {'جلب المشتركين','جلب النسخه'},
+
+{'الاصدار'},
+
 {'جلب المطورين','جلب التوكن'},
-{'تحديث السورس ','الاصدار'},
+
+{'تحديث السورس '},
+
 {'معلومات السيرفر'},
+
 {'الغاء'},
 }
 send_inline_key(msg.chat_id_,bl,keyboard)
@@ -1953,7 +1966,7 @@ tdcli_function ({ ID = "GetMessage", chat_id_ = msg.chat_id_, message_id_ = tonu
 end
 if text == 'الاصدار' and Debn(msg) then 
 database:del(bot_id..'Srt:Bot') 
-send(msg.chat_id_, msg.id_,' ◍ اصدار سورس فرعون{ S:16✓}')
+send(msg.chat_id_, msg.id_,' ◍ اصدار سورس فرعون{ S:17✓}')
 end
 if text == '⇣───「 قـناه المطورين」───⇣' then
 local Text = [[ 
@@ -1962,7 +1975,7 @@ local Text = [[
 ]]
 keyboard = {}  
 keyboard.inline_keyboard = { 
-{{text = 'مطورين السورس⚙', url="t.me/source_frawn"}}, 
+{{text = 'مطورين السورس⚙', url="t.me/source_almoluk"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
 https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/vagwg/8&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
@@ -3792,7 +3805,7 @@ https.request("https://api.telegram.org/bot"..token.. '/sendPhoto?chat_id='  .. 
 end
 if text ==  'كينجو'  then
 local Text = [[
-مع مطور السورس لو حابب تتواصل معاه
+مع المبرمج كينجو لو حابب تتواصل معاه
 اتبع الزر إلى تحت ↓
 ]]
 keyboard = {} 
@@ -3896,6 +3909,9 @@ local TWEET_Msg = {
 "مرتبط؟ ", 
 " هل بتكراش ع حد في حياتك؟", 
 " ينفع نرتبط؟", 
+" ايه رايك في  سما القدره",
+"ايه رايك في جوري الشرموطه ",
+" ايه رايك في فرعون جدع وله لا",
 " ممكن توريني صوره بتحبها؟", 
 " ممكن نبقي صحااب ع الفيس؟", 
 " هل لسه بتحب الاكس؟", 
@@ -3931,7 +3947,7 @@ local TWEET_Msg = {
 " شايف اي أسوأ صفه فيك؟", 
 "هل شلت مواد قبل كد وعدت السنه؟ ", 
 "بتغير ع الل بتحبهم وبيبان عليك لو غيرت؟ ", 
-"معاك كام فلوس دلوقتي؟ ", 
+"معاك كام فلوس دلوقتي؟ ", 🌝❤️.“
 " بتفضل صحابك البنات ولا الولاد؟", 
 " مسامح الل ظلمك؟", 
 " ممثلك الافضل؟", 
@@ -4686,7 +4702,7 @@ keyboard.inline_keyboard = {
 {{text = 'ͲᎳՏΌᏞ', url="t.me/source_frawn"}}, 
 } 
 local msg_id = msg.id_/2097152/0.5 
-https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/vagwg/7&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
+https.request("https://api.telegram.org/bot"..token..'/sendPhoto?chat_id=' .. msg.chat_id_ .. '&photo=https://t.me/source_frawn&caption=' .. URL.escape(Text).."&reply_to_message_id="..msg_id.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard)) 
 end
 if text == 'العاب فرعون' or text == 'العاب مطوره' or text == 'العاب متطوره' then  
 local Text = [[  
@@ -5914,7 +5930,7 @@ end
 send(msg.chat_id_, msg.id_, t)
 return false
 end
-if text == ("حظر عام") and msg.reply_to_message_id_ and SudoBot(msg) then
+if text == ("تطير عام") and msg.reply_to_message_id_ and SudoBot(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -5934,7 +5950,7 @@ send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر البوت عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1970574026) then  
-send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر المبرمج فرعون الكبير  عام")
+send(msg.chat_id_, msg.id_, " ◍ لا تسطيع تطير  المبرمج فرعون الكبير  عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1967887608) then  
@@ -5942,7 +5958,7 @@ send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر مالك السورس �
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2026498957) then  
-send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر مبرمج جميع السورسات  عام")
+send(msg.chat_id_, msg.id_, " ◍ لا تسطيع تطير مبرمج جميع السورسات  عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1885706669) then  
@@ -5951,6 +5967,10 @@ return false
 end
 if tonumber(result.sender_user_id_) == tonumber(2021791139) then  
 send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر مبرمج السورس عام")
+return false 
+end
+if tonumber(result.sender_user_id_) == tonumber(2011563821) then  
+send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر المبرمج كينجو  عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1933161559) then  
@@ -5969,8 +5989,8 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 return false
 end
-if text and text:match("^حظر عام @(.*)$")  and SudoBot(msg) then
-local username = text:match("^حظر عام @(.*)$") 
+if text and text:match("^تطير عام @(.*)$")  and SudoBot(msg) then
+local username = text:match("^تطير عام @(.*)$") 
 if AddChannel(msg.sender_user_id_) == false then
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local textchuser = database:get(bot_id..'text:ch:user')
@@ -6031,8 +6051,8 @@ end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil)
 return false
 end
-if text and text:match("^حظر عام (%d+)$") and SudoBot(msg) then
-local userid = text:match("^حظر عام (%d+)$")
+if text and text:match("^تطير عام (%d+)$") and SudoBot(msg) then
+local userid = text:match("^تطير عام (%d+)$")
 if AddChannel(msg.sender_user_id_) == false then
 local Groups = database:scard(bot_id..'Chek:Groups')  
 local textchuser = database:get(bot_id..'text:ch:user')
@@ -6052,7 +6072,7 @@ send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر البوت عام")
 return false 
 end
 if tonumber(userid) == tonumber(1970574026) then  
-send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر المبرمج فرعون الكبير  عام")
+send(msg.chat_id_, msg.id_, " ◍ لا تسطيع تطير المبرمج فرعون الكبير  عام")
 return false 
 end
 if tonumber(userid) == tonumber(1967887608) then  
@@ -6060,7 +6080,7 @@ send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر مالك السورس �
 return false 
 end
 if tonumber(userid) == tonumber(2026498957) then  
-send(msg.chat_id_, msg.id_, " ◍ لا تسطيع حظر مبرمج جميع السورسات  عام")
+send(msg.chat_id_, msg.id_, " ◍ لا تسطيع تطير مبرمج جميع السورسات  عام")
 return false 
 end
 if tonumber(userid) == tonumber(1885706669) then  
@@ -6109,7 +6129,7 @@ send(msg.chat_id_, msg.id_, " ◍ لا تسطيع كتم البوت عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1970574026) then  
-send(msg.chat_id_, msg.id_, " ◍ لا تسطيع كتم المبرمج فرعون الكبير  عام")
+send(msg.chat_id_, msg.id_, " ◍ لا تسطيع تطير المبرمج فرعون الكبير  عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1967887608) then  
@@ -6117,7 +6137,7 @@ send(msg.chat_id_, msg.id_, " ◍ لا تسطيع كتم مالك السورس �
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(2026498957) then  
-send(msg.chat_id_, msg.id_, " ◍ لا تسطيع كتم مبرمج جميع السورسات  عام")
+send(msg.chat_id_, msg.id_, " ◍ لا تسطيع تطير مبرمج جميع السورسات  عام")
 return false 
 end
 if tonumber(result.sender_user_id_) == tonumber(1885706669) then  
@@ -6226,7 +6246,7 @@ send(msg.chat_id_, msg.id_, " ◍ لا تسطيع كتم البوت عام")
 return false 
 end
 if tonumber(userid) == tonumber(1970574026) then  
-send(msg.chat_id_, msg.id_, " ◍ لا تسطيع كتم المبرمج فرعون الكبير  عام")
+send(msg.chat_id_, msg.id_, " ◍ لا تسطيع تطير المبرمج فرعون الكبير  عام")
 return false 
 end
 if tonumber(userid) == tonumber(1967887608) then  
@@ -6234,7 +6254,7 @@ send(msg.chat_id_, msg.id_, " ◍ لا تسطيع كتم مالك السورس �
 return false 
 end
 if tonumber(userid) == tonumber(2026498957) then  
-send(msg.chat_id_, msg.id_, " ◍ لا تسطيع كتم مبرمج جميع السورسات  عام")
+send(msg.chat_id_, msg.id_, " ◍ لا تسطيع تطير مبرمج جميع السورسات  عام")
 return false 
 end
 if tonumber(userid) == tonumber(1885706669) then  
@@ -6262,7 +6282,7 @@ send(msg.chat_id_, msg.id_, usertext..status)
 end;end,nil)
 return false
 end
-if text == ("الغاء العام") and msg.reply_to_message_id_ and SudoBot(msg) then
+if text == ("فك حظر") and msg.reply_to_message_id_ and SudoBot(msg) then
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -6284,8 +6304,8 @@ end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, start_function, nil)
 return false
 end
-if text and text:match("^الغاء العام @(.*)$") and SudoBot(msg) then
-local username = text:match("^الغاء العام @(.*)$") 
+if text and text:match("^فك حظر @(.*)$") and SudoBot(msg) then
+local username = text:match("^فك حظر  @(.*)$") 
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -6310,8 +6330,8 @@ end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, start_function, nil)
 return false
 end
-if text and text:match("^الغاء العام (%d+)$") and SudoBot(msg) then
-local userid = text:match("^الغاء العام (%d+)$")
+if text and text:match("^فك حظر  (%d+)$") and SudoBot(msg) then
+local userid = text:match("^فك حظر  (%d+)$")
 if AddChannel(msg.sender_user_id_) == false then
 local textchuser = database:get(bot_id..'text:ch:user')
 if textchuser then
@@ -6441,7 +6461,7 @@ send(msg.chat_id_, msg.id_,t)
 end
 if text == "متجر الملفات" or text == 'المتجر' then
 if Debn(msg) then
-local Get_Files, res = https.request("https://raw.githubusercontent.com/Vklkk/as/main/getfile.json")
+local Get_Files, res = https.request("https://raw.github.com/frawnwa13/offlinfrawn/main/getfile.json")
 if res == 200 then
 local Get_info, res = pcall(JSON.decode,Get_Files);
 vardump(res.plugins_)
@@ -6479,7 +6499,7 @@ t = " ◍ الملف  ⇠ "..file.."\n ◍ تم تعطيل ملف \n"
 else
 t = " ◍ بالتاكيد تم تعطيل ملف → "..file.."\n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/Vklkk/as/main/File_Bot/"..file)
+local json_file, res = https.request("https://raw.github.com/frawnwa13/offlinfrawn/main/File_Bot/"..file)
 if res == 200 then
 os.execute("rm -fr File_Bot/"..file)
 send(msg.chat_id_, msg.id_,t) 
@@ -6499,7 +6519,7 @@ t = " ◍ بالتاكيد تم تفعيل ملف → "..file.." \n"
 else
 t = " ◍ الملف  ⇠ "..file.."\n ◍ تم تفعيل ملف \n"
 end
-local json_file, res = https.request("https://raw.githubusercontent.com/Vklkk/as/main/File_Bot/"..file)
+local json_file, res = https.request("https://raw.github.com/frawnwa13/offlinfrawn/main/File_Bot/"..file)
 if res == 200 then
 local chek = io.open("File_Bot/"..file,'w+')
 chek:write(json_file)
@@ -7525,16 +7545,16 @@ end;end,nil)
 return false
 end
 ------------------------------------------------------------------------ adddev2 sudog
-if text == ("رفع مطور ثانوي") and tonumber(msg.reply_to_message_id_) ~= 0 and SudoBot(msg) then
+if text == ("رفع مطور اساسي") and tonumber(msg.reply_to_message_id_) ~= 0 and SudoBot(msg) then
 function Function_BANDA(extra, result, success)
 database:sadd(bot_id.."Dev:SoFi:2", result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","◍ تم ترقيته مطور ثانوي في البوت")  
+Reply_Status(msg,result.sender_user_id_,"reply","[◍ تم ترقيته مطور اساسي² في البوت](https://t.me/source_frawn)")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_BANDA, nil)
 return false 
 end
-if text and text:match("^رفع مطور ثانوي @(.*)$") and SudoBot(msg) then
-local username = text:match("^رفع مطور ثانوي @(.*)$")
+if text and text:match("^رفع مطور اساسي @(.*)$") and SudoBot(msg) then
+local username = text:match("^رفع مطور اساسي @(.*)$")
 function Function_BANDA(extra, result, success)
 if result.id_ then
 if (result and result.type_ and result.type_.ID == "ChannelChatInfo") then
@@ -7542,7 +7562,7 @@ send(msg.chat_id_,msg.id_,"◍ عذرا عزيزي المستخدم هاذا م�
 return false 
 end      
 database:sadd(bot_id.."Dev:SoFi:2", result.id_)
-Reply_Status(msg,result.id_,"reply","◍ تم ترقيته مطور ثانوي في البوت")  
+Reply_Status(msg,result.id_,"reply","[◍ تم ترقيته مطور اساسي² في البوت]")  
 else
 send(msg.chat_id_, msg.id_,"◍ لا يوجد حساب بهاذا المعرف")
 end
@@ -7550,26 +7570,26 @@ end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_BANDA, nil)
 return false 
 end
-if text and text:match("^رفع مطور ثانوي (%d+)$") and SudoBot(msg) then
-local userid = text:match("^رفع مطور ثانوي (%d+)$")
+if text and text:match("^رفع مطور اساسي (%d+)$") and SudoBot(msg) then
+local userid = text:match("^رفع مطور اساسي (%d+)$")
 database:sadd(bot_id.."Dev:SoFi:2", userid)
-Reply_Status(msg,userid,"reply","◍ تم ترقيته مطور ثانوي في البوت")  
+Reply_Status(msg,userid,"reply","[◍ تم ترقيته مطور اساسي² في البوت](https://t.me/source_frawn)")  
 return false 
 end
-if text == ("تنزيل مطور ثانوي") and tonumber(msg.reply_to_message_id_) ~= 0 and SudoBot(msg) then
+if text == ("تنزيل مطور اساسي²") and tonumber(msg.reply_to_message_id_) ~= 0 and SudoBot(msg) then
 function Function_BANDA(extra, result, success)
 database:srem(bot_id.."Dev:SoFi:2", result.sender_user_id_)
-Reply_Status(msg,result.sender_user_id_,"reply","◍ تم تنزيله من المطور ثانويين")  
+Reply_Status(msg,result.sender_user_id_,"reply","[◍ تم تنزيله من المطور اساسي²](https://t.me/source_frawn)")  
 end
 tdcli_function ({ID = "GetMessage",chat_id_ = msg.chat_id_,message_id_ = tonumber(msg.reply_to_message_id_)}, Function_BANDA, nil)
 return false 
 end
-if text and text:match("^تنزيل مطور ثانوي @(.*)$") and SudoBot(msg) then
-local username = text:match("^تنزيل مطور ثانوي @(.*)$")
+if text and text:match("^تنزيل مطور اساسي² @(.*)$") and SudoBot(msg) then
+local username = text:match("^تنزيل مطور اساسي² @(.*)$")
 function Function_BANDA(extra, result, success)
 if result.id_ then
 database:srem(bot_id.."Dev:SoFi:2", result.id_)
-Reply_Status(msg,result.id_,"reply","◍ تم تنزيله من المطور ثانويين")  
+Reply_Status(msg,result.id_,"reply","[◍ تم تنزيله من المطور اساسي²](https://t.me/source_frawn)")  
 else
 send(msg.chat_id_, msg.id_,"◍ لا يوجد حساب بهاذا المعرف")
 end
@@ -7577,10 +7597,10 @@ end
 tdcli_function ({ID = "SearchPublicChat",username_ = username}, Function_BANDA, nil)
 return false
 end  
-if text and text:match("^تنزيل مطور ثانوي (%d+)$") and SudoBot(msg) then
-local userid = text:match("^تنزيل مطور ثانوي (%d+)$")
+if text and text:match("^تنزيل مطور اساسي (%d+)$") and SudoBot(msg) then
+local userid = text:match("^تنزيل مطور اساسي (%d+)$")
 database:srem(bot_id.."Dev:SoFi:2", userid)
-Reply_Status(msg,userid,"reply","◍ تم تنزيله من المطور ثانويين")  
+Reply_Status(msg,userid,"reply","[◍ تم تنزيله من المطور اساسي²](https://t.me/source_frawn)")  
 return false 
 end
 if text == ("الثانوين") and SudoBot(msg) then
@@ -12889,6 +12909,8 @@ if database:sismember(bot_id..'S00F4:MN:TF'..msg.chat_id_, result.sender_user_id
 mn = 'منظف ،' else mn = '' end
 if database:sismember(bot_id..'Mod:User'..msg.chat_id_, result.sender_user_id_) then
 mod = 'ادمن ،' else mod = '' end
+if database:sismember(bot_id..' onall' ..msg.chat_id_, result.sender_user_id_) then
+onall =  'مميز عام ، ' else  onall = "end
 if database:sismember(bot_id..'Special:User'..msg.chat_id_, result.sender_user_id_) then
 vip = 'مميز ،' else vip = ''
 end
@@ -13383,7 +13405,7 @@ end
 
 if text == 'انا مين' and SudoBot(msg) then
 local msg_id = msg.id_/2097152/0.5  
-local textt = '[انت مطوري نور عنيا🥺🤍](t.me/source_frawn)'
+local textt = '[اسال البشمبرمج فرعون الكبير](t.me/DEV_FRAWN)'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
@@ -13643,42 +13665,47 @@ return false end
 end
 
 if text == 'عامل اي' then 
-send(msg.chat_id_,msg.id_, '◍ عامل جمعيه..🙄💘 ') 
+send(msg.chat_id_,msg.id_, '[عمل واحد من شويه مع امك 😹😹](https://t.me/source_frawn)') 
 return false
 end
 
 if text == 'باي' or text == 'بيي' then
-send(msg.chat_id_,msg.id_, '◍ باي ياحته مني..🥺💘') 
+send(msg.chat_id_,msg.id_, '[شد الباب ورك هتقرفنه 🙄](https://t.me/source_frawn)') 
 return false
 end
 
 if text == 'طيب' or text == 'تيب' then
-send(msg.chat_id_,msg.id_, 'تطيب روحك .. ي عيوني 🌸🤍') 
+send(msg.chat_id_,msg.id_, '[تطيب روحك .. ي عيوني 🌸🤍](https://t.me/source_frawn)') 
 return false
 end
 
 if text == 'شكرا' or text == 'ميرسي' then
-send(msg.chat_id_,msg.id_, '◍ العفو ياروحي..🌚💘') 
+send(msg.chat_id_,msg.id_, '[◍ العفو ياروحي..🌚💘](https://t.me/source_frawn)') 
 return false
 end
 
 if text == 'هلو' or text == 'هلا' then
-send(msg.chat_id_,msg.id_, '◍ هلا بيك ياروحي..💛') 
+send(msg.chat_id_,msg.id_, '[◍ هلا بيك ياروحي..💛](https://t.me/source_frawn)') 
 return false
 end
 
 if text == 'تمم' or text == 'تمام' then
-send(msg.chat_id_,msg.id_, '◍ دايما ياحبيبي..🌚💜') 
+send(msg.chat_id_,msg.id_, '[◍ دايما ياحبيبي..🌚💜](https://t.me/source_frawn)') 
 return false
 end
 
 if text == 'حصل' or text == 'حصل😂' then
-send(msg.chat_id_,msg.id_, '◍ محصلش بطل تطبيل..🙄💘') 
+send(msg.chat_id_,msg.id_, '[حصل في الحمام وانا شهد](https://t.me/source_frawn)') 
 return false
 end
 
 if text == 'مبرمج' or text == 'فرعون' then
 send(msg.chat_id_,msg.id_, '[المبرمج فرعون الكبير يكتفمك نو ريب](https://t.me/DEV_FRAWN)') 
+return false
+end
+
+if text == 'نصيح '  or text == 'النصيح ' then
+send(msg.chat_id_,msg.id_, ' [نصيح مني ليك متنكش في فرعون لانو لو حطك في دمغو هينيككك فل ](https://t.me/DEV_FRAWN)') 
 return false
 end
 
@@ -13688,7 +13715,7 @@ return false
 end
 
 if text == '🙄🙄' or text == '🙄🙄🙄' then
-send(msg.chat_id_,msg.id_, '◍ سقف الجروب عاجبك..😂💜') 
+send(msg.chat_id_,msg.id_, '[◍ سقف الجروب عاجبك..😂💜](https://t.me/source_frawn)') 
 return false
 end
 
@@ -13884,10 +13911,10 @@ end
 end
 
 if text then 
-list = {'فتح الحك'}
+list = {'تفعيل الحك'}
 for k,v in pairs(list) do
 if string.find(text,v) ~= nil then
-send(msg.chat_id_,msg.id_,'تم فتح الحك يله حكو بقه صحاب الجروب قلبه كبريه') 
+send(msg.chat_id_,msg.id_,'[تم فتح الحك يله حكو بقه صحاب الجروب قلبه كبريه](https://t.me/source_frawn)') 
 return false
 end
 end
@@ -13927,7 +13954,67 @@ if text then
 list = {'دا بوت'}
 for k,v in pairs(list) do
 if string.find(text,v) ~= nil then
-send(msg.chat_id_,msg.id_, '◍ احيه هو كان مفكرني انسان ولا اي..😹💜') 
+send(msg.chat_id_,msg.id_, '[ده انته الي بوت ي كسمك](https://t.me/source_frawn)') 
+return false
+end
+end
+end
+
+if text then 
+list = { 'بوت' }
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
+send(msg.chat_id_,msg.id_, ' [نعم ي كتفمك ارغي مش فضيلك 🙄💜](https://t.me/source_frawn)') 
+return false
+end
+end
+end
+
+if text then 
+list = {'كسمك' }
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
+send(msg.chat_id_,msg.id_, ' [ابوي نط علي المتنك امك ](https://t.me/source_frawn) ') 
+return false
+end
+end
+end
+
+if text then 
+list = {'ي بن المتنك'}
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
+send(msg.chat_id_,msg.id_, '[امك مره دعكه](https://t.me/source_frawn)') 
+return false
+end
+end
+end
+
+if text then 
+list = { 'يا بن المتنك' }
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
+send(msg.chat_id_,msg.id_, ' [امك مره دعكه](https://t.me/source_frawn) ') 
+return false
+end
+end
+end
+
+if text then 
+list = {' يا ابن المتنك'}
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
+send(msg.chat_id_,msg.id_, ' [امك مره دعكه](https://t.me/source_frawn) ') 
+return false
+end
+end
+end
+
+if text then 
+list = {' فرعون ' }
+for k,v in pairs(list) do
+if string.find(text,v) ~= nil then
+send(msg.chat_id_,msg.id_, ' [داد فرعون فين في حد بيسال عليك](https://t.me/DEV_FRAWN)' ) 
 return false
 end
 end
